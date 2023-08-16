@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Resources;
 
 use Illuminate\Http\Request;
@@ -16,6 +15,8 @@ class TaskResource extends JsonResource
     {
         $data = parent::toArray($request);
         $data['status'] = $this->is_done ? 'finished' : 'open';
-        return  $data;
+
+        return $data;
     }
 }
+

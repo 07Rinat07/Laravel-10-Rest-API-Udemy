@@ -13,6 +13,6 @@ class Task extends Model
       'is_done' => 'boolean',
     ];
     protected $hidden = [
-      'updated_at'
+      'updated_at',
     ];
 }
